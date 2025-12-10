@@ -34,6 +34,9 @@ namespace IxMilia.Step.Items
                     case StepItemTypeExtensions.CircleText:
                         item = StepCircle.CreateFromSyntaxList(binder, simpleItem.Parameters);
                         break;
+                    case StepItemTypeExtensions.ClosedShellText:
+                        item = StepClosedShell.CreateFromSyntaxList(binder, simpleItem.Parameters);
+                        break;
                     case StepItemTypeExtensions.CylindricalSurfaceText:
                         item = StepCylindricalSurface.CreateFromSyntaxList(binder, simpleItem.Parameters);
                         break;
@@ -57,6 +60,9 @@ namespace IxMilia.Step.Items
                         break;
                     case StepItemTypeExtensions.LineText:
                         item = StepLine.CreateFromSyntaxList(binder, simpleItem.Parameters);
+                        break;
+                    case StepItemTypeExtensions.ManifoldSolidBrepText:
+                        item = StepManifoldSolidBrep.CreateFromSyntaxList(binder, simpleItem.Parameters);
                         break;
                     case StepItemTypeExtensions.OrientedEdgeText:
                         item = StepOrientedEdge.CreateFromSyntaxList(binder, simpleItem.Parameters);
